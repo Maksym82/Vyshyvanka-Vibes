@@ -1,6 +1,10 @@
+// Utils
+@import './utils/variables';
+
 // Base
 @import './base/fonts';
 @import './base/base';
 
-// Utils
-@import './utils/variables';
+// Layout
+@import './layout/header';
+
