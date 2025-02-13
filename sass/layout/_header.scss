@@ -5,7 +5,6 @@
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .nav {
@@ -38,6 +37,7 @@
 .header__social-menu {
   display: flex;
   gap: 12px;
+  margin-left: auto;
 }
 
 .header__social-ist {
@@ -73,9 +73,9 @@
   width: 274px;
   min-height: 812px;
   background-color: $colorYellow;
-  // transform: translateX(100%);
-  // transition: transform 400ms linear;
-  background-image: url('../../images/header/mobile-decor.svg');
+  transform: translateX(100%);
+  transition: transform 400ms linear;
+  background-image: url("../../images/header/mobile-decor.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: auto auto;

@@ -133,9 +133,6 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .nav {
@@ -174,6 +171,7 @@ input {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  margin-left: auto;
 }
 
 .header__social-ist {
@@ -218,6 +216,12 @@ input {
   width: 274px;
   min-height: 812px;
   background-color: #ecd979;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 400ms linear;
+  transition: -webkit-transform 400ms linear;
+  transition: transform 400ms linear;
+  transition: transform 400ms linear, -webkit-transform 400ms linear;
   background-image: url("../../images/header/mobile-decor.svg");
   background-repeat: no-repeat;
   background-position: bottom;
