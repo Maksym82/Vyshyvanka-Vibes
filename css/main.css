@@ -169,6 +169,13 @@ input {
   }
 }
 
+.header__social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
 .header__social-ist {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,18 +212,16 @@ input {
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 3;
-  padding: 20px 20px 100px;
-  width: 100%;
-  height: 100%;
+  padding: 20px 20px;
+  width: 274px;
+  min-height: 812px;
   background-color: #ecd979;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 500ms linear;
-  transition: -webkit-transform 500ms linear;
-  transition: transform 500ms linear;
-  transition: transform 500ms linear, -webkit-transform 500ms linear;
+  background-image: url("../../images/header/mobile-decor.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto auto;
 }
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
