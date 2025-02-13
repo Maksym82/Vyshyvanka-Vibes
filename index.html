@@ -15,18 +15,16 @@
       <div class="header__container">
         <div class="header__logo">
           <a href="">
-            <img src="./images/logo.svg" alt="logo" />
+            <img src="./images/header/logo.svg" alt="logo" />
           </a>
         </div>
         <nav class="nav">
-          <div class="menu__body">
-            <ul class="nav__list">
-              <li><a href="">About us</a></li>
-              <li><a href="">Our collection </a></li>
-              <li><a href="">CUSTOMER ORDER</a></li>
-              <li><a href="">TEstimonials</a></li>
-            </ul>
-          </div>
+          <ul class="nav__list">
+            <li><a href="">About us</a></li>
+            <li><a href="">Our collection </a></li>
+            <li><a href="">CUSTOMER ORDER</a></li>
+            <li><a href="">TEstimonials</a></li>
+          </ul>
         </nav>
         <address class="header__address">
           <a class="header__address-link" href="tel:+380684439426"
@@ -36,23 +34,55 @@
         <ul class="header__social-ist">
           <li class="header__social-item">
             <a class="header__social-link" href="">
-              <img src="./images/facebook.svg" alt="logo facebook" />
+              <img src="./images/header/facebook.svg" alt="logo facebook" />
             </a>
           </li>
           <li class="header__social-item">
             <a class="header__social-link" href="">
-              <img src="./images/instagram.svg" alt="logo instagram" />
+              <img src="./images/header/instagram.svg" alt="logo instagram" />
             </a>
           </li>
           <li class="header__social-item">
             <a class="header__social-link" href="">
-              <img src="./images/youtube.svg" alt="logo youtube" />
+              <img src="./images/header/youtube.svg" alt="logo youtube" />
             </a>
           </li>
         </ul>
-        <button class="icon-menu" type="button">
-          <span></span>
+        <button class="burger__menu-open js-open-menu" type="button">
+          <img
+            src="./images/header/burger__icon-open.svg"
+            alt="icon open menu"
+          />
         </button>
+
+        <!--Mobile menu-->
+        <div class="mobile-menu is-hidden js-menu-container">
+          <div class="mobile-menu__container">
+            <button class="mobile-menu__close js-close-menu" type="button">
+              <img
+                class="icon-burger-close"
+                src="./images/header/icon-burger-close.svg"
+                alt="icon-burger-close"
+              />
+            </button>
+            <nav class="mobile">
+              <ul class="mobile__list">
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="">About us</a>
+                </li>
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="">Our collection </a>
+                </li>
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="">CUSTOMER ORDER</a>
+                </li>
+                <li class="mobile__item">
+                  <a class="mobile__link mobile-header-link" href="">TEstimonials</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <script src="./js/script.js"></script>
