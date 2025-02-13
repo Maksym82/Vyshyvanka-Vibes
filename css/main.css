@@ -135,16 +135,25 @@ input {
           align-items: center;
 }
 
-.nav {
+.nav__list {
   display: none;
 }
 @media (min-width: 1280px) {
-  .nav {
+  .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 25px;
+    margin-left: 60px;
   }
+}
+
+.nav__list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #fcf9f9;
 }
 
 .header__address-link {
@@ -163,6 +172,12 @@ input {
 @media (min-width: 1280px) {
   .header__address-link {
     display: block;
+    margin-left: 180px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__address-link {
+    margin-left: 235px;
   }
 }
 
@@ -172,6 +187,11 @@ input {
   display: flex;
   gap: 12px;
   margin-left: auto;
+}
+@media (min-width: 1280px) {
+  .header__social-menu {
+    margin-right: 0;
+  }
 }
 
 .header__social-ist {
@@ -184,6 +204,11 @@ input {
   gap: 12px;
 }
 
+@media (min-width: 1280px) {
+  .burger__menu-open {
+    display: none;
+  }
+}
 .header__social-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,6 +252,18 @@ input {
   background-position: bottom;
   background-size: auto auto;
 }
+@media (min-width: 768px) {
+  .mobile-menu {
+    width: 380px;
+    height: 1024px;
+    background-image: url("../../images/header/tablet-decor.svg");
+  }
+}
+@media (min-width: 1280px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -269,17 +306,32 @@ input {
   color: #1c2225;
 }
 .mobile-menu .header__address-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid rgba(28, 34, 37, 0.1);
   border-radius: 15px;
-  padding: 12px 20px;
   width: 158px;
   height: 38px;
   font-style: normal;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   text-transform: uppercase;
   color: #1c2225;
   margin-bottom: 186px;
+}
+@media (min-width: 768px) {
+  .mobile-menu .header__address-mobile {
+    line-height: 1.43;
+    font-size: 14px;
+    width: 193px;
+  }
 }
 .mobile-menu .mobile__list {
   display: -webkit-box;
@@ -294,9 +346,14 @@ input {
           flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 768px) {
+  .mobile-menu .mobile__list {
+    gap: 25px;
+  }
+}
 .mobile-menu .mobile__link {
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   text-transform: uppercase;
   color: #1c2225;
 }/*# sourceMappingURL=main.css.map */
