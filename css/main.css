@@ -356,4 +356,47 @@ input {
   line-height: 1.29;
   text-transform: uppercase;
   color: #1c2225;
+}
+
+.hero {
+  padding-top: 84px;
+  padding-bottom: 80px;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.09;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  margin-bottom: 20px;
+}
+
+.hero__title span {
+  color: #ecd979;
+}
+
+.hero__link {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 32px;
+  width: 154px;
+  height: 49px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+.hero__arrow {
+  margin-left: 10px;
+}
+
+.hero__img {
+  max-width: 100%;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
