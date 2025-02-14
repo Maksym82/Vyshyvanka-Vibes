@@ -23,6 +23,12 @@
   line-height: 1.29;
   text-transform: uppercase;
   color: $colorWhite;
+  transition: color 0.25s linear;
+
+  &:hover,
+  &:focus {
+    color: $colorYellow;
+  }
 }
 
 .header__address-link {
@@ -37,6 +43,12 @@
   padding: 14px 28px;
   width: 193px;
   height: 48px;
+  transition: border 0.25s linear;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorYellow 
+  }
 
   @media (min-width: 1280px) {
     display: block;

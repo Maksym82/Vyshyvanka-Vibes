@@ -154,6 +154,11 @@ input {
   line-height: 1.29;
   text-transform: uppercase;
   color: #fcf9f9;
+  -webkit-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+}
+.nav__list-link:hover, .nav__list-link:focus {
+  color: #ecd979;
 }
 
 .header__address-link {
@@ -168,6 +173,11 @@ input {
   padding: 14px 28px;
   width: 193px;
   height: 48px;
+  -webkit-transition: border 0.25s linear;
+  transition: border 0.25s linear;
+}
+.header__address-link:hover, .header__address-link:focus {
+  border: 1px solid #ecd979;
 }
 @media (min-width: 1280px) {
   .header__address-link {
