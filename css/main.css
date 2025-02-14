@@ -99,7 +99,7 @@ input {
 }
 
 [class*=__container] {
-  max-width: 375px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
