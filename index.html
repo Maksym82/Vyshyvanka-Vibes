@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vyshyvanka-Vibes</title>
     <!--Favicon-->
-    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="shortcut icon" href="./images/header/favicon.ico" />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -110,24 +110,50 @@
           </h1>
           <a class="hero__link" href=""
             >Order
-            <img class="hero__arrow" src="./images/header/hero-arrow.svg" alt="arrow" />
+            <img
+              class="hero__arrow"
+              src="./images/header/hero-arrow.svg"
+              alt="arrow"
+            />
           </a>
-          <div class="hero__image-box">
-            <picture>
-              <source
-                src="./images/hero/hero-webp@1x.webp 1x, ./images/hero/hero-webp@2x.webp 2x"
-                type="image/webp"
-              />
-              <source
-                src="./images/hero/hero-jpg@1x.jpg 1x, ./images/hero/hero-jpg@2x.jpg 2x"
-                type="image/jpeg"
-              />
-              <img
-                class="hero__img"
-                src="./images/hero/hero-1.jpg"
-                alt="girl"
-              />
-            </picture>
+          <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+              <!--Slide #1-->
+              <div class="swiper-slide hero__swiper-slide">
+                <img
+                  class="hero__img"
+                  srcset="
+                    ./images/hero/hero-webp-mobile-335.webp 335w,
+                    ./images/hero/hero-webp-mobile-670.webp 670w,
+                    ./images/hero/hero-webp-tablet-413.webp 413w,
+                    ./images/hero/hero-webp-tablet-826.webp 826w,
+                    ./images/hero/hero-webp-desktop-392.webp 392w,
+                    ./images/hero/hero-webp-desktop-784.webp 784w,
+                  "
+                  sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (min-width: 320px) 335px"
+                  alt="girl in an embroidered shirt"
+                  src="./images/hero/hero-1-mobile.jpg"
+                />
+              </div>
+              <!--Slide #2-->
+              <!-- <div class="hero__swiper-slide swiper-slide">
+                <picture>
+                  <source
+                    src="./images/hero/hero-webp-mobile@1x.webp 1x, ./images/hero/hero-webp-mobile@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/hero/hero-jpg-mobile@1x.jpg 1x, ./images/hero/hero-jpg-mobile@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="hero__img"
+                    src="./images/hero/hero-1-mobile.jpg"
+                    alt="girl"
+                  />
+                </picture> -->
+              </div>
+            </div>
           </div>
         </div>
       </section>
