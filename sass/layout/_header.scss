@@ -17,7 +17,8 @@
   }
 }
 
-.nav__list-link {
+.nav__link {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -29,6 +30,26 @@
   &:focus {
     color: $colorYellow;
   }
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $colorYellow;
+  border-radius: 5px 5px 0px 0px;
+  transform: scaleX(0);
+  transition: transform 350ms linear;
+}
+
+.nav__link:hover::after,
+.nav__link:focus::after {
+  transform: scaleX(1);
+  transition: transform 350ms linear;
 }
 
 .header__address-link {
@@ -47,7 +68,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $colorYellow 
+    border: 1px solid $colorYellow;
   }
 
   @media (min-width: 1280px) {
