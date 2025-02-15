@@ -381,6 +381,15 @@ input {
   color: #fcf9f9;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .hero__title {
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 1.19;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+  }
+}
 
 .hero__title span {
   color: #ecd979;
