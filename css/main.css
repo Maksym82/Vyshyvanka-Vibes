@@ -202,11 +202,12 @@ input {
   padding: 14px 28px;
   width: 193px;
   height: 48px;
-  -webkit-transition: border 0.25s linear;
-  transition: border 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 .header__address-link:hover, .header__address-link:focus {
   border: 1px solid #ecd979;
+  color: #ecd979;
 }
 @media (min-width: 1280px) {
   .header__address-link {
@@ -479,6 +480,11 @@ input {
   cursor: pointer;
   margin-left: 70px;
   margin-bottom: 40px;
+  -webkit-transition: border-color 0.25s linear;
+  transition: border-color 0.25s linear;
+}
+.hero__link:hover, .hero__link:focus {
+  border-color: #ecd979;
 }
 @media (min-width: 768px) {
   .hero__link {

@@ -64,11 +64,12 @@
   padding: 14px 28px;
   width: 193px;
   height: 48px;
-  transition: border 0.25s linear;
+  transition: all 0.25s linear;
 
   &:hover,
   &:focus {
     border: 1px solid $colorYellow;
+    color: $colorYellow;
   }
 
   @media (min-width: 1280px) {

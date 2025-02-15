@@ -71,6 +71,12 @@
   cursor: pointer;
   margin-left: 70px;
   margin-bottom: 40px;
+  transition: border-color 0.25s linear;
+
+  &:hover,
+  &:focus {
+    border-color: $colorYellow;
+  }
 
   @media (min-width: 768px) {
     font-size: 16px;
