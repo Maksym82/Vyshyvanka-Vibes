@@ -687,7 +687,7 @@ input {
 }
 @media (min-width: 375px) {
   .about__image-container {
-    max-width: 375px;
+    max-width: 335px;
   }
 }
 @media (min-width: 768px) {
