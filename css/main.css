@@ -122,7 +122,7 @@ input {
   }
 }
 
-._section-title {
+.section-title {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.375;
@@ -130,7 +130,7 @@ input {
   color: #fcf9f9;
 }
 @media (min-width: 768px) {
-  ._section-title {
+  .section-title {
     font-size: 44px;
     line-height: 1.45;
   }
@@ -618,4 +618,19 @@ input {
 .hero__img {
   max-width: 100%;
   border-radius: 4px;
+}
+
+.about {
+  padding-bottom: 80px;
+}
+
+.about-title {
+  margin-bottom: 40px;
+}
+
+.about__text {
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  color: rgba(252, 249, 249, 0.4);
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
