@@ -122,6 +122,20 @@ input {
   }
 }
 
+._section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+}
+@media (min-width: 768px) {
+  ._section-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+}
+
 .header {
   padding-top: 20px;
 }
