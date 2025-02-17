@@ -721,6 +721,7 @@ input {
 
 .collection__img {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 .collection__card-name {
@@ -732,6 +733,11 @@ input {
   color: #fcf9f9;
   margin-bottom: 8px;
 }
+@media (min-width: 768px) {
+  .collection__card-name {
+    font-size: 18px;
+  }
+}
 
 .collection__card-price {
   font-weight: 400;
@@ -739,4 +745,9 @@ input {
   line-height: 1;
   letter-spacing: 0.05em;
   color: rgba(252, 249, 249, 0.4);
+}
+@media (min-width: 768px) {
+  .collection__card-price {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */

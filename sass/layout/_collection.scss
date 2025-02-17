@@ -8,6 +8,7 @@
 
 .collection__img {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 .collection__card-name {
@@ -18,6 +19,10 @@
   text-transform: uppercase;
   color: $colorWhite;
   margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .collection__card-price {
@@ -26,4 +31,8 @@
   line-height: 1;
   letter-spacing: 0.05em;
   color: rgba(252, 249, 249, 0.4);
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
