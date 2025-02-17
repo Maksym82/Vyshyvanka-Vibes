@@ -709,4 +709,8 @@ input {
 .about__img {
   border-radius: 4px;
   max-width: 100%;
+}
+
+.collection {
+  padding-bottom: 80px;
 }/*# sourceMappingURL=main.css.map */
