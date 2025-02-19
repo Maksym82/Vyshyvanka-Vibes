@@ -18,6 +18,9 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $colorWhite;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-bottom: 8px;
 
   @media (min-width: 768px) {
