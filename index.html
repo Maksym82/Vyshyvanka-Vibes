@@ -26,7 +26,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li><a class="nav__link" href="#about">About us</a></li>
-            <li><a class="nav__link" href="">Our collection </a></li>
+            <li><a class="nav__link" href="#collection">Our collection </a></li>
             <li><a class="nav__link" href="">CUSTOMER ORDER</a></li>
             <li><a class="nav__link" href="">TEstimonials</a></li>
           </ul>
@@ -85,7 +85,7 @@
                   >
                 </li>
                 <li class="mobile__item">
-                  <a class="mobile__link mobile-header-link" href=""
+                  <a class="mobile__link mobile-header-link" href="#collection"
                     >Our collection
                   </a>
                 </li>
@@ -247,7 +247,7 @@
         </div>
       </section>
       <!--Collection-->
-      <section class="collection">
+      <section class="collection" id="collection">
         <div class="collection__container">
           <h2 class="section-title collection-title">Our collection</h2>
           <div class="swiper collection-swiper">
@@ -301,6 +301,31 @@
                   Women's blouse Gorgany
                 </h3>
                 <p class="collection__card-price">3350 UAH</p>
+              </div>
+              <!--Card #3-->
+              <div class="swiper-slide collection__swiper-slide">
+                <div class="collection__img-container">
+                  <img
+                    class="collection__img"
+                    srcset="
+                      ./images/collection/3/3-mobile-335.webp  335w,
+                      ./images/collection/3/3-mobile-670.webp  670w,
+                      ./images/collection/3/3-tablet-342.webp  342w,
+                      ./images/collection/3/3-tablet-684.webp  684w,
+                      ./images/collection/3/3-desktop-380.webp 380w,
+                      ./images/collection/3/3-desktop-760.webp 760w,
+                      ./images/collection/3/3-desktop-400.webp 400w,
+                      ./images/collection/3/3-desktop-800.webp 800w
+                    "
+                    sizes="(min-width: 1440px) 400px, (min-width: 1280px) 380px, (min-width: 768px) 342px, (min-width: 320px) 335px"
+                    alt="Ukrainian embroidered shirt"
+                    src="./images/collection/3/3-mobile.jpg"
+                  />
+                </div>
+                <h3 class="collection__card-name">
+                  Women's blouse Crimea
+                </h3>
+                <p class="collection__card-price">4000 UAH</p>
               </div>
             </div>
           </div>
