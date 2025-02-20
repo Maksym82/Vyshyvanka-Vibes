@@ -758,4 +758,21 @@ input {
   .collection__card-price {
     font-size: 18px;
   }
+}
+
+.collection-container {
+  height: 515px;
+}
+
+.collection__swiper-slide {
+  height: 450px;
+}
+@media (min-width: 768px) {
+  .collection__swiper-slide {
+    height: 520px;
+  }
+}
+
+.collection__swiper-scrollbar {
+  background-color: #ecd979;
 }/*# sourceMappingURL=main.css.map */

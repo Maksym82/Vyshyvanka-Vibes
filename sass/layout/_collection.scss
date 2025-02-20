@@ -44,3 +44,19 @@
     font-size: 18px;
   }
 }
+
+.collection-container {
+  height: 515px;
+}
+
+.collection__swiper-slide {
+  height: 450px;
+
+  @media (min-width: 768px) {
+    height: 520px;
+  }
+}
+
+.collection__swiper-scrollbar {
+  background-color: $colorYellow;
+}
