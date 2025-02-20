@@ -24,8 +24,8 @@ const swiper = new Swiper(".collection-swiper", {
     },
   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });
