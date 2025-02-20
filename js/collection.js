@@ -2,22 +2,11 @@ const swiper = new Swiper(".collection-swiper", {
   loop: true,
   mousewheel: false,
   grabCursor: true,
-  effect: "cube",
-  cubeEffect: {
-    shadow: false,
-    slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.94,
-    slidesPerView: 1,
-    spaceBetween: 10
-  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+
 
   breakpoints: {
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
