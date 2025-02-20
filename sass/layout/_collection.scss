@@ -45,18 +45,24 @@
   }
 }
 
-.collection-container {
-  height: 515px;
-}
+.collection__swiper-pagination {
+  position: relative;
+  bottom: auto;
+  text-align: center;
+  margin-top: 14px;
 
-.collection__swiper-slide {
-  height: 450px;
-
-  @media (min-width: 768px) {
-    height: 520px;
+  @media screen and (min-width: 768px) {
+    margin-top: 21px;
   }
 }
 
-.collection__swiper-scrollbar {
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.swiper-pagination-bullet-active {
   background-color: $colorYellow;
 }
