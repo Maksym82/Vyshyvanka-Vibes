@@ -9,6 +9,10 @@
     background-size: 338px 300px;
     background-position: left -224px bottom 200px;
   }
+
+  @media (min-width: 1280px) {
+    background-position: left -170px bottom 200px;
+  }
 }
 
 .collection-title {
