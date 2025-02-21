@@ -713,6 +713,16 @@ input {
 
 .collection {
   padding-bottom: 80px;
+  background-image: url("../../images/collection/decor-collection.svg");
+  background-repeat: no-repeat;
+  background-size: 199px 177px;
+  background-position: left -125px bottom 172px;
+}
+@media (min-width: 768px) {
+  .collection {
+    background-size: 338px 300px;
+    background-position: left -224px bottom 200px;
+  }
 }
 
 .collection-title {

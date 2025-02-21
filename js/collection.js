@@ -10,7 +10,7 @@ const swiper = new Swiper(".collection-swiper", {
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
     // when window width is >= 1280px
     1280: {
