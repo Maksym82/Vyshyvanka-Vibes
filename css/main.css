@@ -730,6 +730,10 @@ input {
   }
 }
 
+.collection-swiper:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .collection-title {
   text-align: center;
   margin-bottom: 40px;
