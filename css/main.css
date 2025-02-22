@@ -884,7 +884,17 @@ input {
 
 .order__img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .order__img {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .order__img {
+    margin-bottom: 150px;
+  }
 }/*# sourceMappingURL=main.css.map */
