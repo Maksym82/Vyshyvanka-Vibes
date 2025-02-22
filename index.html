@@ -546,6 +546,42 @@
           </div>
         </div>
       </section>
+      <!--Order-->
+      <section class="order">
+        <div class="order__container">
+          <h2 class="section-title">
+            <span>Your order</span> is our priority: Personalized approach and
+            quality of service
+          </h2>
+          <form class="form">
+            <div class="form__field">
+              <label class="form__label" for="fullname"></label>
+              <input
+                class="form__input"
+                type="text"
+                name="user-name"
+                id="fullname"
+                placeholder="Enter your full name"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ'-]{2,20}"
+              />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="email"></label>
+              <input
+                class="form__input"
+                type="email"
+                name="user-email"
+                id="email"
+                placeholder="Enter your email"
+                required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
+            </div>
+            <textarea name="user-comment" placeholder="Comments"> </textarea>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
