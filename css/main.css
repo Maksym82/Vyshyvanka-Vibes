@@ -875,4 +875,9 @@ input {
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #fcf9f9;
+  -webkit-transition: border 0.25s linear;
+  transition: border 0.25s linear;
+}
+.form__button:hover, .form__button:focus {
+  border-color: #ecd979;
 }/*# sourceMappingURL=main.css.map */

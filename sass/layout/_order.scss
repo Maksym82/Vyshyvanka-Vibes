@@ -65,4 +65,10 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: $colorWhite;
+  transition: border 0.25s linear;
+
+  &:hover,
+  &:focus {
+    border-color: $colorYellow;
+  }
 }
