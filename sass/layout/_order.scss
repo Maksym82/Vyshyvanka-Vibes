@@ -51,5 +51,18 @@
 }
 
 .form__button {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   margin: 0 auto;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  width: 145px;
+  height: 49px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: $colorWhite;
 }
