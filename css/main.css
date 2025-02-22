@@ -880,4 +880,11 @@ input {
 }
 .form__button:hover, .form__button:focus {
   border-color: #ecd979;
+}
+
+.order__img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }/*# sourceMappingURL=main.css.map */
