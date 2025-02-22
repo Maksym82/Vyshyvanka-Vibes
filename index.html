@@ -27,7 +27,7 @@
           <ul class="nav__list">
             <li><a class="nav__link" href="#about">About us</a></li>
             <li><a class="nav__link" href="#collection">Our collection </a></li>
-            <li><a class="nav__link" href="">CUSTOMER ORDER</a></li>
+            <li><a class="nav__link" href="#order">CUSTOMER ORDER</a></li>
             <li><a class="nav__link" href="">TEstimonials</a></li>
           </ul>
         </nav>
@@ -90,7 +90,7 @@
                   </a>
                 </li>
                 <li class="mobile__item">
-                  <a class="mobile__link mobile-header-link" href=""
+                  <a class="mobile__link mobile-header-link" href="#order"
                     >CUSTOMER ORDER</a
                   >
                 </li>
@@ -547,38 +547,42 @@
         </div>
       </section>
       <!--Order-->
-      <section class="order">
+      <section class="order" id="order">
         <div class="order__container">
-          <h2 class="section-title">
+          <h2 class="section-title order-title">
             <span>Your order</span> is our priority: Personalized approach and
             quality of service
           </h2>
           <form class="form">
-            <div class="form__field">
-              <label class="form__label" for="fullname"></label>
-              <input
-                class="form__input"
-                type="text"
-                name="user-name"
-                id="fullname"
-                placeholder="Enter your full name"
-                required
-                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ'-]{2,20}"
-              />
-            </div>
-            <div class="form__field">
-              <label class="form__label" for="email"></label>
-              <input
-                class="form__input"
-                type="email"
-                name="user-email"
-                id="email"
-                placeholder="Enter your email"
-                required
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              />
-            </div>
-            <textarea name="user-comment" placeholder="Comments"> </textarea>
+            <label class="form__label" for="fullname"></label>
+            <input
+              class="form__input"
+              type="text"
+              name="user-name"
+              id="fullname"
+              placeholder="Enter your full name"
+              required
+              pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ'-]{2,20}"
+            />
+            <label class="form__label" for="email"></label>
+            <input
+              class="form__input"
+              type="email"
+              name="user-email"
+              id="email"
+              placeholder="Enter your email"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+            <textarea
+              class="form__textarea"
+              name="user-comment"
+              placeholder="Comments"></textarea>
+            
+            <button class="form__button" type="submit">
+              Send
+              <img src="./images/header/hero-arrow.svg" alt="arrow" />
+            </button>
           </form>
         </div>
       </section>
