@@ -815,6 +815,10 @@ input {
   margin-bottom: 40px;
 }
 
+.form {
+  margin-bottom: 80px;
+}
+
 .form__input {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
@@ -897,4 +901,9 @@ input {
   .order__img {
     margin-bottom: 150px;
   }
+}
+
+.order__second-img {
+  max-width: 100%;
+  border-radius: 15px;
 }/*# sourceMappingURL=main.css.map */
