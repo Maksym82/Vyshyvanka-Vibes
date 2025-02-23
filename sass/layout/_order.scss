@@ -1,12 +1,28 @@
 .order {
   padding-bottom: 80px;
-  background-image: url('../../images/order/order-decor.svg');
+  background-image: url("../../images/order/order-decor.svg");
   background-repeat: no-repeat;
   background-size: 268px 300px;
   background-position: bottom right 150px;
 
   @media (min-width: 768px) {
     padding-bottom: 100px;
+    background-size: 544px 484px;
+    background-position: bottom 20px right 435px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 150px;
+    background-size: 544px 484px;
+    background-position: bottom 150px left -200px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .order__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
   }
 }
 
@@ -22,6 +38,11 @@
     min-width: 542px;
     line-height: 1.32;
   }
+
+  @media (min-width: 1440px) {
+    min-width: 635px;
+    line-height: 1.32;
+  }
 }
 
 .form {
@@ -29,6 +50,10 @@
 
   @media (min-width: 768px) {
     width: 508px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 0;
   }
 }
 
@@ -136,5 +161,6 @@
   }
   @media (min-width: 1280px) {
     border: none;
+    order: -1;
   }
 }
