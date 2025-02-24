@@ -17,6 +17,16 @@
   padding: 54px 18px 18px 18px;
   max-width: 335px;
   height: 243px;
+
+  @media (min-width: 768px) {
+    width: 336px;
+    height: 268px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 376px;
+    height: 285px;
+  }
 }
 
 .testimonials__image {
@@ -43,4 +53,13 @@
   font-size: 14px;
   text-align: center;
   color: rgba(252, 249, 249, 0.4);
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.testimonials-swiper-pagination {
+  position: relative;
+  margin-top: 20px;
 }

@@ -10,17 +10,15 @@ const swiper = new Swiper(".testimonials-swiper", {
       // when window width is >= 768px
       768: {
         slidesPerView: 2,
-        spaceBetween: 32,
+        spaceBetween: 32
       },
       // when window width is >= 1280px
       1280: {
         slidesPerView: 3,
-        spaceBetween: 26,
       },
       // when window width is >= 1440px
       1440: {
         slidesPerView: 3,
-        spaceBetween: 26,
       },
     },
   
