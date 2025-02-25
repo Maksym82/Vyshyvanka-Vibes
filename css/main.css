@@ -1070,7 +1070,7 @@ input {
   border-top: 1px solid rgba(252, 249, 249, 0.1);
   background-image: url("../../images/footer/footer-decor.svg");
   background-repeat: no-repeat;
-  background-size: 372px 401px;
+  background-size: 452px 401px;
   background-position: center bottom -203px;
 }
 
@@ -1085,10 +1085,44 @@ input {
 }
 
 .footer__nav-link {
+  position: relative;
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
   color: #fcf9f9;
+  -webkit-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+}
+.footer__nav-link:hover, .footer__nav-link:focus {
+  color: #ecd979;
+}
+
+.footer__nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #ecd979;
+  border-radius: 5px 5px 0px 0px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 350ms linear;
+  transition: -webkit-transform 350ms linear;
+  transition: transform 350ms linear;
+  transition: transform 350ms linear, -webkit-transform 350ms linear;
+}
+
+.footer__nav-link:hover::after,
+.footer__nav-link:focus::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 350ms linear;
+  transition: -webkit-transform 350ms linear;
+  transition: transform 350ms linear;
+  transition: transform 350ms linear, -webkit-transform 350ms linear;
 }
 
 .footer__nav-item:first-child {

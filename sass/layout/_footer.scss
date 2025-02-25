@@ -2,9 +2,9 @@
   padding-top: 40px;
   padding-bottom: 280px;
   border-top: 1px solid rgba(252, 249, 249, 0.1);
-  background-image: url('../../images/footer/footer-decor.svg');
+  background-image: url("../../images/footer/footer-decor.svg");
   background-repeat: no-repeat;
-  background-size: 372px 401px;
+  background-size: 452px 401px;
   background-position: center bottom -203px;
 }
 
@@ -16,10 +16,37 @@
 }
 
 .footer__nav-link {
+  position: relative;
   font-size: 14px;
   line-height: 1.28;
   text-transform: uppercase;
   color: $colorWhite;
+  transition: color 0.25s linear;
+
+  &:hover,
+  &:focus {
+    color: $colorYellow;
+  }
+}
+
+.footer__nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $colorYellow;
+    border-radius: 5px 5px 0px 0px;
+    transform: scaleX(0);
+    transition: transform 350ms linear;
+}
+
+.footer__nav-link:hover::after,
+.footer__nav-link:focus::after {
+  transform: scaleX(1);
+  transition: transform 350ms linear;
 }
 
 .footer__nav-item:first-child {
