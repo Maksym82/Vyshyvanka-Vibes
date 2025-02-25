@@ -1079,6 +1079,11 @@ input {
     background-position: center right -260px;
   }
 }
+@media (min-width: 1280px) {
+  .footer {
+    background-size: 595px 528px;
+  }
+}
 
 .footer__nav-list {
   display: -webkit-box;
@@ -1093,6 +1098,11 @@ input {
   .footer__nav-list {
     margin-bottom: 80px;
     gap: 25px;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__nav-list {
+    margin-bottom: 117px;
   }
 }
 
@@ -1173,6 +1183,13 @@ input {
     line-height: 1.18519;
     max-width: 521px;
     letter-spacing: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__title {
+    min-width: 754px;
+    font-size: 64px;
+    line-height: 1.15625;
   }
 }
 
