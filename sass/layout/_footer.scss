@@ -15,6 +15,10 @@
   @media (min-width: 1280px) {
     background-size: 595px 528px;
   }
+
+  @media (min-width: 1280px) {
+    background-position: center right -94px;
+  }
 }
 
 .footer__nav-list {
@@ -101,7 +105,7 @@
   }
 
   @media (min-width: 1280px) {
-    min-width: 754px;
+    max-width: 773px;
     font-size: 64px;
     line-height: 1.15625;
   }
