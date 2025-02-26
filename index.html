@@ -11,6 +11,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -113,7 +115,12 @@
         <div class="hero__container">
           <div class="hero__content">
             <div class="hero__title-box">
-              <h1 class="hero__title">
+              <h1
+                class="hero__title"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 Reviving the traditional <span>Ukrainian</span> artistry in
                 every stitch.
               </h1>
@@ -179,7 +186,12 @@
       <section class="about" id="about">
         <div class="about__container">
           <div class="about__content">
-            <div class="about__title-text">
+            <div
+              class="about__title-text"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <h2 class="section-title about-title">About Us</h2>
               <p class="about__text">
                 The store "Vyshyvanka Vibes" is a place where traditional
@@ -568,7 +580,7 @@
         />
         <div class="order__container order__content">
           <div>
-            <h2 class="section-title order-title">
+            <h2 class="section-title order-title" data-aos="fade-left">
               <span>Your order</span> is our priority: Personalized approach and
               quality of service
             </h2>
@@ -634,7 +646,11 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!--Card #1-->
-              <div class="swiper-slide testimonials-swiper-slide">
+              <div
+                class="swiper-slide testimonials-swiper-slide"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div class="testimonials__card">
                   <img
                     class="testimonials__image"
@@ -652,7 +668,12 @@
                 </div>
               </div>
               <!--Card #2-->
-              <div class="swiper-slide testimonials-swiper-slide">
+              <div
+                class="swiper-slide testimonials-swiper-slide"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <div class="testimonials__card">
                   <img
                     class="testimonials__image"
@@ -670,7 +691,11 @@
                 </div>
               </div>
               <!--Card #3-->
-              <div class="swiper-slide testimonials-swiper-slide">
+              <div
+                class="swiper-slide testimonials-swiper-slide"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div class="testimonials__card">
                   <img
                     class="testimonials__image"
@@ -728,11 +753,15 @@
       </svg>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/about.js" type="module"></script>
     <script src="./js/collection.js" type="module"></script>
     <script src="./js/testimonials.js" type="module"></script>
-    <Script src="./js/scroll-up.js"></Script>
+    <script src="./js/scroll-up.js"></script>
   </body>
 </html>
