@@ -622,7 +622,7 @@ input {
 
 .about {
   padding-bottom: 80px;
-  background-image: url("../../images/about/about-decor.svg");
+  background-image: url("../images/about/about-decor.svg");
   background-size: 459px 408px;
   background-repeat: no-repeat;
   background-position: left 100px bottom 20px;
@@ -713,7 +713,7 @@ input {
 
 .collection {
   padding-bottom: 80px;
-  background-image: url("../../images/collection/decor-collection.svg");
+  background-image: url("../images/collection/decor-collection.svg");
   background-repeat: no-repeat;
   background-size: 199px 177px;
   background-position: left -125px bottom 172px;
@@ -804,7 +804,7 @@ input {
 
 .order {
   padding-bottom: 80px;
-  background-image: url("../../images/order/order-decor.svg");
+  background-image: url("../images/order/order-decor.svg");
   background-repeat: no-repeat;
   background-size: 268px 300px;
   background-position: bottom right 150px;
@@ -1068,7 +1068,7 @@ input {
   padding-top: 40px;
   padding-bottom: 280px;
   border-top: 1px solid rgba(252, 249, 249, 0.1);
-  background-image: url("../../images/footer/footer-decor.svg");
+  background-image: url("../images/footer/footer-decor.svg");
   background-repeat: no-repeat;
   background-size: 452px 401px;
   background-position: center bottom -203px;
