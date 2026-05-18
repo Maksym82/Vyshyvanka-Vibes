@@ -1,28 +1,28 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Manrope";
-  src: url("../Manrope-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("../Manrope-Medium.woff2") format("woff2");
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("../Manrope-Regular.woff2") format("woff2");
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("../../fonts/DMSans-Regular.woff2") format("woff2");
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -302,7 +302,7 @@ input {
   transition: -webkit-transform 400ms linear;
   transition: transform 400ms linear;
   transition: transform 400ms linear, -webkit-transform 400ms linear;
-  background-image: url("../../images/header/mobile-decor.svg");
+  background-image: url("../images/header/mobile-decor.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: auto auto;
@@ -311,7 +311,7 @@ input {
   .mobile-menu {
     width: 380px;
     height: 1024px;
-    background-image: url("../../images/header/tablet-decor.svg");
+    background-image: url("../images/header/tablet-decor.svg");
   }
 }
 @media (min-width: 1280px) {
@@ -783,7 +783,13 @@ input {
 .collection__swiper-pagination {
   position: relative;
   bottom: auto;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6px;
   margin-top: 14px;
 }
 @media screen and (min-width: 768px) {
@@ -793,8 +799,8 @@ input {
 }
 
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: gray;
 }
