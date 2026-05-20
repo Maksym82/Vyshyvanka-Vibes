@@ -11,7 +11,7 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="./images/header/favicon.ico" />
     <!--Swiper-->
-    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -151,39 +151,123 @@
               <div class="swiper-wrapper">
                 <!--Slide #1-->
                 <div class="swiper-slide hero__swiper-slide">
-                  <img
-                    class="hero__img"
-                    srcset="
-                      ./images/hero/hero-webp-mobile-335.webp  335w,
-                      ./images/hero/hero-webp-mobile-670.webp  670w,
-                      ./images/hero/hero-webp-tablet-413.webp  413w,
-                      ./images/hero/hero-webp-tablet-826.webp  826w,
-                      ./images/hero/hero-webp-desktop-392.webp 392w,
-                      ./images/hero/hero-webp-desktop-784.webp 784w
-                    "
-                    sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (min-width: 320px) 335px"
-                    alt="girl in an embroidered shirt"
-                    src="./images/hero/hero-1-mobile.jpg"
-                    fetchpriority="high"
-                  />
+                  <picture>
+                    <!-- Desktop 1280 -->
+                    <source
+                      srcset="
+                        ./images/hero/hero-1/hero-desktop-392.avif 1x,
+                        ./images/hero/hero-1/hero-desktop-784.avif 2x
+                      "
+                      type="image/avif"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/hero/hero-1/hero-desktop-392.webp 1x,
+                        ./images/hero/hero-1/hero-desktop-784.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1280px)"
+                    />
+                    <!-- Tablet 768 -->
+                    <source
+                      srcset="
+                        ./images/hero/hero-1/hero-tablet-413.avif 1x,
+                        ./images/hero/hero-1/hero-tablet-826.avif 2x
+                      "
+                      type="image/avif"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/hero/hero-1/hero-tablet-413.webp 1x,
+                        ./images/hero/hero-1/hero-tablet-826.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/hero/hero-1/hero-mobile-335.avif 1x,
+                        ./images/hero/hero-1/hero-mobile-670.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/hero/hero-1/hero-mobile-335.webp 1x,
+                        ./images/hero/hero-1/hero-mobile-670.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- Fallback для мобильного -->
+                    <img
+                      class="hero__img"
+                      src="./images/hero/hero-1/hero-1-mobile.jpg"
+                      alt="girl in an embroidered shirt"
+                    />
+                  </picture>
                 </div>
                 <!--Slide #2-->
                 <div class="swiper-slide hero__swiper-slide">
-                  <img
-                    class="hero__img"
-                    srcset="
-                      ./images/hero/hero-2-webp-mobile-335.webp  335w,
-                      ./images/hero/hero-2-webp-mobile-670.webp  670w,
-                      ./images/hero/hero-2-webp-tablet-413.webp  413w,
-                      ./images/hero/hero-2-webp-tablet-826.webp  826w,
-                      ./images/hero/hero-2-webp-desktop-392.webp 392w,
-                      ./images/hero/hero-2-webp-desktop-784.webp 784w
-                    "
-                    sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (min-width: 320px) 335px"
-                    src="./images/hero/hero-2-desktop.jpg"
-                    alt="girl in an embroidered shirt"
-                    fetchpriority="high"
-                  />
+                  <picture>
+                    <!-- Desktop 1280 -->
+                    <source
+                      srcset="
+                        ./images/hero/hero-2/hero-2-desktop-392.avif 1x,
+                        ./images/hero/hero-2/hero-2-desktop-784.avif 2x
+                      "
+                      type="image/avif"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/hero/hero-2/hero-2-desktop-392.webp 1x,
+                        ./images/hero/hero-2/hero-2-desktop-784.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1280px)"
+                    />
+                    <!-- Tablet 768 -->
+                    <source
+                      srcset="
+                        ./images/hero/hero-2/hero-2-tablet-413.avif 1x,
+                        ./images/hero/hero-2/hero-2-tablet-826.avif 2x
+                      "
+                      type="image/avif"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/hero/hero-2/hero-2-tablet-413.webp 1x,
+                        ./images/hero/hero-2/hero-2-tablet-826.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/hero/hero-2/hero-2-mobile-335.avif 1x,
+                        ./images/hero/hero-2/hero-2-mobile-670.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/hero/hero-2/hero-2-mobile-335.webp 1x,
+                        ./images/hero/hero-2/hero-2-mobile-670.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- Fallback для мобильного -->
+                    <img
+                      class="hero__img"
+                      src="./images/hero/hero-2/hero-2-mobile.jpg"
+                      alt="girl in an embroidered shirt"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -796,7 +880,7 @@
         />
       </svg>
     </div>
-    
+
     <script src="./libs/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
